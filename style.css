@@ -11,6 +11,7 @@ header{
     top: 0;
     width: 1005;
     height: 80px;
+    scroll-snap-align: start;
 }
 
 header h4 {
@@ -61,4 +62,33 @@ header h4 {
     bottom: 150px;
     opacity: 0;
     transition: ease-in-out 0.5s;
+}
+
+/* Scroll snap */
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .page-1 {
+    scroll-margin-top: 110px;
+} */
+
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+nav {
+    /* display: none; */
+    height: 30px;
 }
