@@ -74,11 +74,6 @@ header h4 {
     text-align: center;
 }
 
-/* .page-1 {
-    scroll-margin-top: 110px;
-} */
-
-
 html {
     scroll-snap-type: y mandatory;
 }
@@ -91,7 +86,7 @@ section {
 
 /* Page Projet */
 
-/* .cards {
+.cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,6 +188,4 @@ section {
     display: inline-block;
     text-decoration: none;
     font-weight: 700;
-} */
-
-
+} 
