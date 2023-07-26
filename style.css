@@ -209,9 +209,13 @@ section {
     }
     .card img 
     {
-        top: 70%;
+        top: 50%;
         left: 50%;
         height: 300px;
+    }
+    .card:hover img {
+        top: 77%;
+        left: 50%;
     }
 }
 
