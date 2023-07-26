@@ -84,7 +84,7 @@ section {
     scroll-snap-stop: always;
 }
 
-/* Page Projet */
+/* Page Projet / Animations des cartes + responsive*/
 
 .cards {
     display: flex;
@@ -141,14 +141,21 @@ section {
     pointer-events: none;
     transition: 0.5s;
 }
+.card .img-2 {
+    height: 200px;
+}
 
 .card:hover img {
     left: 72%;
     height: 500px;
 }
 
-.card .content 
-{
+.card:hover .img-2 {
+    left: 72%;
+    height: 300px;
+}
+
+.card .content {
     position: relative;
     width: 50%;
     left: 20%;
@@ -158,8 +165,7 @@ section {
     visibility: hidden;
 }
 
-.card:hover .content 
-{
+.card:hover .content {
     left: 0;
     opacity: 1;
     visibility: visible;
@@ -188,39 +194,40 @@ section {
     display: inline-block;
     text-decoration: none;
     font-weight: 700;
-} 
+}
 
-@media (max-width: 991px)
-{
-    .card
-    {
+
+@media (max-width: 991px) {
+    .card {
         width: auto;
         max-width: 350px;
         align-items: flex-start;
         margin: 10px;
     }
-    .card:hover{
+
+    .card:hover {
         height: 600px;
     }
+
     .card .content {
         width: 100%;
         left: 0;
         padding: 30px;
     }
-    .card img 
-    {
+
+    .card img {
         top: 50%;
         left: 50%;
         height: 300px;
     }
+
     .card:hover img {
         top: 77%;
         left: 50%;
     }
 }
 
-@media (max-width: 420px)
-{
+@media (max-width: 420px) {
     .card .content {
         padding: 20px;
     }
