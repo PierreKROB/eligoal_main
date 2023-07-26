@@ -198,6 +198,10 @@ section {
 
 
 @media (max-width: 991px) {
+    .cards{
+        flex-direction: column;
+    }
+
     .card {
         width: auto;
         max-width: 350px;
