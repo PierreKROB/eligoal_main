@@ -31,3 +31,41 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 2300);
     })
 })
+
+
+
+
+$(document).ready(function () {
+    // Tableau contenant les noms des icônes FontAwesome
+    var iconNames = [
+        "fa-user-circle",
+        "fa-battery-half",
+        "fa-bolt",
+        "fa-bookmark",
+        "fa-cog",
+        "fas fa-tshirt",
+        "fa-envelope",
+        "fa-gift",
+        "fas fa-tint",
+        "fas fa-thumbs-up",
+        "fas fa-space-shuttle",
+        "fa-globe",
+        "fa-graduation-cap",
+        "fas fa-server",
+        "fas fa-mouse",
+        "fa-heart",
+        "fa-info-circle",
+        "fa-life-ring",
+        "fa-paper-plane",
+        "fa-file"
+    ];
+
+    // Sélectionnez le conteneur des icônes par sa classe
+    var iconsContainer = $('.icons-container');
+
+    // Parcours du tableau d'icônes pour générer les balises <i> et les ajouter au conteneur
+    iconNames.forEach(function (iconName) {
+        var iconElement = $('<i>').addClass('fa ' + iconName).attr('aria-hidden', 'true');
+        iconsContainer.append(iconElement);
+    });
+});
