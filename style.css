@@ -130,7 +130,10 @@ i:hover {
 }
 
 
-
+.row h2 {
+    position: fixed;
+    text-align: center;
+}
 
 
 
